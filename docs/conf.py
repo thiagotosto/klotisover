@@ -46,7 +46,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'Klotisover'
-copyright = u'2017, Thiago Tosto, Jose Nominato, Filipe Rangel, João Gabriel'
+copyright = u'2017, Thiago Tosto, Jose Nominato, Filipe Rangel, Bruno Carrilho'
 author = u'Thiago Tosto, Jose Nominato, Filipe Rangel, João Gabriel'
 
 # The version info for the project you're documenting, acts as replacement for
@@ -133,7 +133,7 @@ latex_elements = {
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
     (master_doc, 'Klotisover.tex', u'Klotisover',
-     u'Thiago Tosto, Jose Nominato, Filipe Rangel, João Gabriel', 'manual'),
+     u'Thiago Tosto, Jose Nominato, Filipe Rangel, Bruno Carrilho', 'manual'),
 ]
 
 

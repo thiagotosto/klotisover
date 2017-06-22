@@ -10,6 +10,6 @@
 \contentsline {subsection}{\numberline {3.2.1}Gerar pr\IeC {\'o}ximo estado (a)}{6}{subsection.3.2.1}
 \contentsline {subsection}{\numberline {3.2.2}Solu\IeC {\c c}\IeC {\~a}o teste (b)}{7}{subsection.3.2.2}
 \contentsline {subsection}{\numberline {3.2.3}Testa se j\IeC {\'a} existe(busca na \IeC {\'a}rvore) (c)}{7}{subsection.3.2.3}
-\contentsline {subsection}{\numberline {3.2.4}Gera filho}{7}{subsection.3.2.4}
+\contentsline {subsection}{\numberline {3.2.4}Gera filho (d)}{7}{subsection.3.2.4}
 \contentsline {section}{\numberline {3.3}3\IeC {\textordmasculine } n\IeC {\'\i }vel de abstra\IeC {\c c}\IeC {\~a}o}{7}{section.3.3}
 \contentsline {subsection}{\numberline {3.3.1}Compara matriz (i)}{7}{subsection.3.3.1}

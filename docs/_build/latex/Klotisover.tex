@@ -40,7 +40,7 @@
 \title{Klotisover}
 \date{22 jun, 2017}
 \release{}
-\author{Thiago Tosto, Jose Nominato, Filipe Rangel, João Gabriel}
+\author{Thiago Tosto, Jose Nominato, Filipe Rangel, Bruno Carrilho}
 \newcommand{\sphinxlogo}{\vbox{}}
 \renewcommand{\releasename}{Versão}
 \makeindex
@@ -153,13 +153,16 @@ Gera próximo estado  (a)
 
 \item {} \begin{description}
 \item[{8 vezes:}] \leavevmode\begin{itemize}
-\item {} 
-Testa se é solução (b)
-
+\item {} \begin{description}
+\item[{Testa se é solução (b)}] \leavevmode\begin{itemize}
 \item {} \begin{description}
 \item[{(Não) Testa se já existe (c)}] \leavevmode\begin{itemize}
 \item {} 
-(Não) Gera filho e chama recursividade
+(Não) Gera filho e chama recursividade (d)
+
+\end{itemize}
+
+\end{description}
 
 \end{itemize}
 
@@ -244,8 +247,8 @@ Retorna falso
 \end{quote}
 
 
-\subsection{Gera filho}
-\label{\detokenize{pseudo:gera-filho}}\begin{quote}
+\subsection{Gera filho (d)}
+\label{\detokenize{pseudo:gera-filho-d}}\begin{quote}
 
 Parâmetros: pai; estado;
 \begin{itemize}

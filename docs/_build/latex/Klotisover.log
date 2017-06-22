@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.3.7)  22 JUN 2017 19:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.6.22)  22 JUN 2017 23:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1120,7 +1120,7 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 51.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Overfull \hbox (14.25987pt too wide) in paragraph at lines 51--51
+Overfull \hbox (31.5053pt too wide) in paragraph at lines 51--51
  [][]
  []
 
@@ -1258,50 +1258,60 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 143.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 146.
-LaTeX Font Info:    Try loading font information for TS1+phv on input line 178.
+
+! LaTeX Error: Too deeply nested.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.159 ...¡ existe (c)}] \leavevmode\begin{itemize}
+                                                  
+? 
+LaTeX Font Info:    Try loading font information for TS1+phv on input line 181.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1phv.fd
 File: ts1phv.fd 2001/06/04 scalable font definitions for TS1/phv.
 )
 LaTeX Font Info:    Font shape `TS1/phv/bx/n' in size <14.4> not available
-(Font)              Font shape `TS1/phv/b/n' tried instead on input line 178.
+(Font)              Font shape `TS1/phv/b/n' tried instead on input line 181.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 178.
+(babel)             in language  on input line 181.
 
 
 Package Fancyhdr Warning: \fancyfoot's `E' option without twoside option is use
-less on input line 212.
+less on input line 215.
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 212.
+(babel)             in language  on input line 215.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 212.
+(babel)             in language  on input line 215.
 [6
 
 ]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 271.
+(babel)             in language  on input line 274.
  (./Klotisover.ind)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 298.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 301.
 LaTeX Font Info:    Font shape `TS1/phv/bx/n' in size <10> not available
-(Font)              Font shape `TS1/phv/b/n' tried instead on input line 298.
+(Font)              Font shape `TS1/phv/b/n' tried instead on input line 301.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 298.
+(babel)             in language  on input line 301.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 298.
+(babel)             in language  on input line 301.
  [7]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 298.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 301.
  (./Klotisover.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 298.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 298.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 301.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 301.
 Package rerunfilecheck Info: File `Klotisover.out' has not changed.
 (rerunfilecheck)             Checksum: C1E4D99B4524ACA7877469DD455B5C2D;1048.
  ) 
 Here is how much of TeX's memory you used:
- 13841 strings out of 493029
- 189828 string characters out of 6136235
- 283840 words of memory out of 5000000
- 17047 multiletter control sequences out of 15000+600000
+ 13843 strings out of 493029
+ 189856 string characters out of 6136234
+ 283847 words of memory out of 5000000
+ 17049 multiletter control sequences out of 15000+600000
  46720 words of font info for 64 fonts, out of 8000000 for 9000
  1142 hyphenation exceptions out of 8191
  37i,11n,45p,780b,409s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1310,7 +1320,7 @@ e/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist
 /fonts/type1/urw/helvetic/uhvbo8a.pfb></usr/share/texlive/texmf-dist/fonts/type
 1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/
 utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on Klotisover.pdf (9 pages, 129915 bytes).
+Output written on Klotisover.pdf (9 pages, 130214 bytes).
 PDF statistics:
  133 PDF objects out of 1000 (max. 8388607)
  104 compressed objects within 2 object streams

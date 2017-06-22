@@ -10,8 +10,8 @@ Gerar Árvore (principal)
 	* Gera próximo estado  (a)
 	* 8 vezes:
 		* Testa se é solução (b)
-	 	* (Não) Testa se já existe (c)
-	 		* (Não) Gera filho e chama recursividade
+	 		* (Não) Testa se já existe (c)
+	 			* (Não) Gera filho e chama recursividade (d)
 	 	* (Sim) Retorna até pai guardando estados no vetor solução
 
 2º nível de abstração
@@ -45,8 +45,8 @@ Testa se já existe(busca na árvore) (c)
 			* (não) Chama recursividade passando filho como raíz
 	* Retorna falso 
 
-Gera filho
-----------
+Gera filho (d)
+--------------
 
 	Parâmetros: pai; estado;
 
