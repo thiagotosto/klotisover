@@ -28,7 +28,7 @@ int main(int argc, char const *argv[]) {
   //tentando mover M para esquerda
   //gotoleft(klotski, 'M');
   //imprime_mat(klotski);
-  
+
 
   return 0;
 }

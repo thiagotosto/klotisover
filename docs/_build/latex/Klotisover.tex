@@ -7,20 +7,18 @@
 
 \usepackage[utf8]{inputenc}
 \ifdefined\DeclareUnicodeCharacter
+ \ifdefined\DeclareUnicodeCharacterAsOptional\else
   \DeclareUnicodeCharacter{00A0}{\nobreakspace}
-\fi
+\fi\fi
 \usepackage{cmap}
 \usepackage[T1]{fontenc}
 \usepackage{amsmath,amssymb,amstext}
 \usepackage[portuguese]{babel}
 \usepackage{times}
 \usepackage[Sonny]{fncychap}
-\usepackage{longtable}
-\usepackage{sphinx}
+\usepackage[dontkeepoldnames,maxlistdepth=6]{sphinx}
 
 \usepackage{geometry}
-\usepackage{multirow}
-\usepackage{eqparbox}
 
 % Include hyperref last.
 \usepackage{hyperref}
@@ -40,15 +38,15 @@
 
 
 \title{Klotisover}
-\date{jun 22, 2017}
+\date{22 jun, 2017}
 \release{}
 \author{Thiago Tosto, Jose Nominato, Filipe Rangel, João Gabriel}
-\newcommand{\sphinxlogo}{}
+\newcommand{\sphinxlogo}{\vbox{}}
 \renewcommand{\releasename}{Versão}
 \makeindex
 
 \begin{document}
-\if\catcode`\"\active\shorthandoff{"}\fi
+\ifnum\catcode`\"=\active\shorthandoff{"}\fi
 \maketitle
 \sphinxtableofcontents
 \phantomsection\label{\detokenize{index::doc}}
@@ -57,9 +55,231 @@
 
 \chapter{Introdução}
 \label{\detokenize{intro:introducao}}\label{\detokenize{intro:bem-vindo-a-documentacao-do-klotisover}}\label{\detokenize{intro::doc}}
-Klotski é um jogo famoso de quebra-cabeça, onde o objetivo é retirar uma peça principal de dentro de um confinamento em meio a obstaculos móveis.
+\begin{DUlineblock}{0em}
+\item[] Klotski é um jogo famoso de quebra-cabeça, onde o objetivo é retirar uma peça principal de dentro de um confinamento em meio a obstaculos móveis.
+\end{DUlineblock}
 
 \noindent{\hspace*{\fill}\sphinxincludegraphics[scale=0.7]{{klotski}.png}\hspace*{\fill}}
+
+\begin{DUlineblock}{0em}
+\item[] 
+\item[] 
+\end{DUlineblock}
+
+\begin{DUlineblock}{0em}
+\item[] O jogo tem uma certa complexidade e o desafio proposto por esse trabalho é desenvolver um software capaz de solucionar um caso particular desse jogo.
+\end{DUlineblock}
+
+\noindent{\hspace*{\fill}\sphinxincludegraphics{{klotski_particular}.png}\hspace*{\fill}}
+
+
+\chapter{Algoritmo}
+\label{\detokenize{algoritmo::doc}}\label{\detokenize{algoritmo:algoritmo}}
+
+\section{Estrutura de dados}
+\label{\detokenize{algoritmo:estrutura-de-dados}}
+\begin{DUlineblock}{0em}
+\item[] A estrutura de dados escolhida para solução do problema é uma árvore genérica.
+\end{DUlineblock}
+
+\begin{DUlineblock}{0em}
+\item[] 
+\end{DUlineblock}
+\begin{figure}[htbp]
+\centering
+
+\noindent\sphinxincludegraphics{{arvore_generica}.jpg}
+\end{figure}
+
+\begin{DUlineblock}{0em}
+\item[] Cada nó desta árvore corresponde a um estado da matriz que representa o jogo, aonde o nó raíz será o estado inicial da matriz.
+\item[] A partir do estado inicial, é possivel enxergar 8 novos candidatos a novos estados. Cada estado representa um nó filho de seu nó pai.
+\item[] Recursivamente, temos o mesmo raciocínio para cada nó, até que se chegue no estado desejado que é com a dama em sua saída.
+\item[] É de suma importância que uma geração de um novo filho não gere um estado que já se encontre na árvore para que se evite loops eternos ou que
+\end{DUlineblock}
+
+cheguemos em uma configuração na qual já se tem o caminho.
+
+\begin{DUlineblock}{0em}
+\item[] O caminho do nó raíz até o nó folha que é o estado final buscado, representa a solução do problema.
+\end{DUlineblock}
+\begin{figure}[htbp]
+\centering
+
+\noindent\sphinxincludegraphics{{arvore_caminho}.jpg}
+\end{figure}
+
+\begin{DUlineblock}{0em}
+\item[] O comprimento do caminho representa a quantidade de passos feitos para chegar na solução.
+\end{DUlineblock}
+
+
+\section{Modelagem do Klotski}
+\label{\detokenize{algoritmo:modelagem-do-klotski}}
+\begin{DUlineblock}{0em}
+\item[] A modelagem do Jogo foi feita através de uma matriz onde letras representam as peças diferentes e 0 os espaços em branco:
+\end{DUlineblock}
+\begin{figure}[htbp]
+\centering
+
+\noindent\sphinxincludegraphics{{modelagem}.png}
+\end{figure}
+
+\begin{DUlineblock}{0em}
+\item[] A letra “D” representa a \sphinxstylestrong{dama} que é a peça que temos como objetivo tirar do quebra cabeça.
+\end{DUlineblock}
+
+
+\chapter{Pseudo Código}
+\label{\detokenize{pseudo:pseudo-codigo}}\label{\detokenize{pseudo::doc}}
+
+\section{Raíz}
+\label{\detokenize{pseudo:raiz}}
+
+\subsection{Gerar Árvore (principal)}
+\label{\detokenize{pseudo:gerar-arvore-principal}}\begin{itemize}
+\item {} 
+Gera próximo estado  (a)
+
+\item {} \begin{description}
+\item[{8 vezes:}] \leavevmode\begin{itemize}
+\item {} 
+Testa se é solução (b)
+
+\item {} \begin{description}
+\item[{(Não) Testa se já existe (c)}] \leavevmode\begin{itemize}
+\item {} 
+(Não) Gera filho e chama recursividade
+
+\end{itemize}
+
+\end{description}
+
+\item {} 
+(Sim) Retorna até pai guardando estados no vetor solução
+
+\end{itemize}
+
+\end{description}
+
+\end{itemize}
+
+
+\section{2º nível de abstração}
+\label{\detokenize{pseudo:o-nivel-de-abstracao}}
+
+\subsection{Gerar próximo estado (a)}
+\label{\detokenize{pseudo:gerar-proximo-estado-a}}\begin{itemize}
+\item {} 
+Achar lacuna
+
+\item {} 
+Achar periféricos
+
+\item {} \begin{description}
+\item[{Para cada periférico:}] \leavevmode\begin{itemize}
+\item {} 
+Tentar mover periférico e guardar estado no vetor estados
+
+\end{itemize}
+
+\end{description}
+
+\item {} 
+Retorna estados
+
+\end{itemize}
+
+
+\subsection{Solução teste (b)}
+\label{\detokenize{pseudo:solucao-teste-b}}\begin{itemize}
+\item {} 
+compara matriz (i)
+
+\end{itemize}
+
+\begin{DUlineblock}{0em}
+\item[] 
+\item[] 
+\end{DUlineblock}
+
+
+\subsection{Testa se já existe(busca na árvore) (c)}
+\label{\detokenize{pseudo:testa-se-ja-existe-busca-na-arvore-c}}\begin{quote}
+
+Parâmetros: nó raiz; nó buscado(estado)
+\begin{itemize}
+\item {} \begin{description}
+\item[{Para cada filho:}] \leavevmode\begin{itemize}
+\item {} \begin{description}
+\item[{Testa se filho é igual a nó buscado(compara matriz):}] \leavevmode\begin{itemize}
+\item {} 
+(sim) retorna verdadeiro
+
+\item {} 
+(não) Chama recursividade passando filho como raíz
+
+\end{itemize}
+
+\end{description}
+
+\end{itemize}
+
+\end{description}
+
+\item {} 
+Retorna falso
+
+\end{itemize}
+\end{quote}
+
+
+\subsection{Gera filho}
+\label{\detokenize{pseudo:gera-filho}}\begin{quote}
+
+Parâmetros: pai; estado;
+\begin{itemize}
+\item {} 
+«Instancia» filho.
+
+\item {} 
+Setar pai (filho.pai = pai).
+
+\item {} 
+Setar estado (filho.estado = estado).
+
+\item {} 
+Anula filhos (filhos.filhos{[}{]}).
+
+\item {} 
+Retorna filho
+
+\end{itemize}
+\end{quote}
+
+
+\section{3º nível de abstração}
+\label{\detokenize{pseudo:id1}}
+
+\subsection{Compara matriz (i)}
+\label{\detokenize{pseudo:compara-matriz-i}}\begin{quote}
+
+Parâmetros: matriz 1; matriz 2;
+\begin{itemize}
+\item {} \begin{description}
+\item[{Testa se matriz1 e matriz2 são nulas:}] \leavevmode\begin{itemize}
+\item {} 
+(não) compara
+
+\item {} 
+(sim) retorna falso
+
+\end{itemize}
+
+\end{description}
+
+\end{itemize}
+\end{quote}
 
 
 

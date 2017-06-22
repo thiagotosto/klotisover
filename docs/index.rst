@@ -10,4 +10,5 @@ Bem vindo a documentação do Klotisover
    :maxdepth: 2
 
    intro
-
+   algoritmo
+   pseudo 

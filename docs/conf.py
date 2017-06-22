@@ -106,6 +106,7 @@ htmlhelp_basename = 'Klotisoverdoc'
 
 latex_elements = {
 
+    'maxlistdepth' : '6',
     'classoptions': ',openany,oneside',
     'babel': '\\usepackage[portuguese]{babel}'
 
