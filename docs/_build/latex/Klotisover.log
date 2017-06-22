@@ -1,4 +1,8 @@
+<<<<<<< HEAD
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.3.7)  22 JUN 2017 19:48
+=======
 This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.3.7)  22 JUN 2017 19:29
+>>>>>>> 4e06533ea292a58f0c03fb35ae1a10bc0e2a4304
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1120,7 +1124,7 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 51.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Overfull \hbox (14.25987pt too wide) in paragraph at lines 51--51
+Overfull \hbox (31.5053pt too wide) in paragraph at lines 51--51
  [][]
  []
 
@@ -1300,7 +1304,7 @@ Package rerunfilecheck Info: File `Klotisover.out' has not changed.
 Here is how much of TeX's memory you used:
  13841 strings out of 493029
  189828 string characters out of 6136235
- 283840 words of memory out of 5000000
+ 283841 words of memory out of 5000000
  17047 multiletter control sequences out of 15000+600000
  46720 words of font info for 64 fonts, out of 8000000 for 9000
  1142 hyphenation exceptions out of 8191
@@ -1310,7 +1314,11 @@ e/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist
 /fonts/type1/urw/helvetic/uhvbo8a.pfb></usr/share/texlive/texmf-dist/fonts/type
 1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/
 utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
+<<<<<<< HEAD
+Output written on Klotisover.pdf (9 pages, 130121 bytes).
+=======
 Output written on Klotisover.pdf (9 pages, 129915 bytes).
+>>>>>>> 4e06533ea292a58f0c03fb35ae1a10bc0e2a4304
 PDF statistics:
  133 PDF objects out of 1000 (max. 8388607)
  104 compressed objects within 2 object streams
