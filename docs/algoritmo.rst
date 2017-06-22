@@ -26,6 +26,14 @@ cheguemos em uma configuração na qual já se tem o caminho.
 
 | O comprimento do caminho representa a quantidade de passos feitos para chegar na solução.
 
+|
+|
+|
+|
+|
+|
+|
+
 
 Modelagem do Klotski
 ####################
