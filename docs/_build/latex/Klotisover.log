@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.3.7)  21 JUN 2017 19:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.3.7)  22 JUN 2017 13:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1182,7 +1182,7 @@ File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 File: klotski.png Graphic file (type png)
  <use klotski.png>
 Package pdftex.def Info: klotski.png used on input line 62.
-(pdftex.def)             Requested size: 309.15424pt x 402.50276pt.
+(pdftex.def)             Requested size: 216.40701pt x 281.7507pt.
 
 (./Klotisover.ind)
 
@@ -1202,12 +1202,7 @@ Package babel Info: Redefining portuges shorthand "|
 [1
 
 
-]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 68.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 68.
- [2 <./klotski.png>]
+ <./klotski.png>]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 68.
  (./Klotisover.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 68.
@@ -1217,8 +1212,8 @@ Package rerunfilecheck Info: File `Klotisover.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 68.
  ) 
 Here is how much of TeX's memory you used:
- 13605 strings out of 493029
- 186919 string characters out of 6136235
+ 13604 strings out of 493029
+ 186913 string characters out of 6136235
  275426 words of memory out of 5000000
  16846 multiletter control sequences out of 15000+600000
  38381 words of font info for 51 fonts, out of 8000000 for 9000
@@ -1229,10 +1224,10 @@ e/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist
 /fonts/type1/urw/helvetic/uhvbo8a.pfb></usr/share/texlive/texmf-dist/fonts/type
 1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/
 utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on Klotisover.pdf (4 pages, 51816 bytes).
+Output written on Klotisover.pdf (3 pages, 51464 bytes).
 PDF statistics:
- 62 PDF objects out of 1000 (max. 8388607)
- 43 compressed objects within 1 object stream
- 7 named destinations out of 1000 (max. 500000)
+ 56 PDF objects out of 1000 (max. 8388607)
+ 38 compressed objects within 1 object stream
+ 6 named destinations out of 1000 (max. 500000)
  34 words of extra memory for PDF output out of 10000 (max. 10000000)
 
