@@ -175,7 +175,7 @@ void imprime_mat(int vet[5][6]){
 
 	for (i=0;i<5;++i){
 		for (j=0;j<6;++j)
-			printf("%c ",vet[i][j]);
+			printf("%c \t",vet[i][j]);
 		printf ("\n");
 		}
 	printf("\n");
