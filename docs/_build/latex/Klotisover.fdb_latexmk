@@ -1,4 +1,5 @@
 # Fdb version 3
+<<<<<<< HEAD
 ["makeindex Klotisover.idx"] 1498164377 "Klotisover.idx" "Klotisover.ind" "Klotisover" 1498185501
   "Klotisover.idx" 1498185497 0 d41d8cd98f00b204e9800998ecf8427e ""
   (generated)
@@ -6,6 +7,24 @@
   "Klotisover.ind"
 ["pdflatex"] 1498185497 "Klotisover.tex" "Klotisover.pdf" "Klotisover" 1498185501
   "/etc/texmf/web2c/texmf.cnf" 1498184439 1101 af7716885e081ab43982cab7b4672c1a ""
+=======
+<<<<<<< HEAD
+["makeindex Klotisover.idx"] 1498164377 "Klotisover.idx" "Klotisover.ind" "Klotisover" 1498171699
+  "Klotisover.idx" 1498171698 0 d41d8cd98f00b204e9800998ecf8427e ""
+=======
+["makeindex Klotisover.idx"] 1498164377 "Klotisover.idx" "Klotisover.ind" "Klotisover" 1498170566
+  "Klotisover.idx" 1498170566 0 d41d8cd98f00b204e9800998ecf8427e ""
+>>>>>>> 4e06533ea292a58f0c03fb35ae1a10bc0e2a4304
+  (generated)
+  "Klotisover.ind"
+<<<<<<< HEAD
+["pdflatex"] 1498171696 "Klotisover.tex" "Klotisover.pdf" "Klotisover" 1498171699
+=======
+  "Klotisover.ilg"
+["pdflatex"] 1498170566 "Klotisover.tex" "Klotisover.pdf" "Klotisover" 1498170566
+>>>>>>> 4e06533ea292a58f0c03fb35ae1a10bc0e2a4304
+  "/etc/texmf/web2c/texmf.cnf" 1488925637 1101 af7716885e081ab43982cab7b4672c1a ""
+>>>>>>> ffd37bbb3acb2715b9c990fbe6fa54c2a41e965b
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1272929888 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/courier/pcrr8t.tfm" 1136768653 1384 4632f5e54900a7dadbb83f555bc61e56 ""
@@ -137,6 +156,7 @@
   "/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty" 1169481954 55224 a43bab84e0ac5e6efcaf9a98bde73a94 ""
   "/usr/share/texlive/texmf-dist/web2c/texmf.cnf" 1458942643 31351 b32c45dce4a01cb7b53ed90c546614ca ""
   "/usr/share/texmf/web2c/texmf.cnf" 1458942643 31351 b32c45dce4a01cb7b53ed90c546614ca ""
+<<<<<<< HEAD
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1498184560 1863403 f3ff9a4253bcb5fb9a9baaf0c572cb01 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1498184644 3853885 d672c256bd6eaf04f5ff6fe93b82f5df ""
   "Klotisover.aux" 1498185498 4143 fac40d5032c8962a7262c4ad0baed0a5 ""
@@ -155,10 +175,59 @@
   "sphinxhighlight.sty" 1498185501 8137 b8d4ef963833564f6e4eadc09cd757c4 ""
   "sphinxmanual.cls" 1498180746 3589 0b0aac49c6f36925cf5f9d524a75a978 ""
   "sphinxmulticell.sty" 1498180746 14618 0defbdc8536ad2e67f1eac6a1431bc55 ""
+=======
+  "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1488925757 1863403 f3ff9a4253bcb5fb9a9baaf0c572cb01 ""
+  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1488925826 3859729 7ce1e48a9fd943f446d582ab2d2e8858 ""
+<<<<<<< HEAD
+  "Klotisover.aux" 1498171698 4133 8c3f5f2de37e06256c546fa7cd04a8af ""
+  "Klotisover.ind" 1498164378 0 d41d8cd98f00b204e9800998ecf8427e "makeindex Klotisover.idx"
+  "Klotisover.out" 1498171698 1048 c1e4d99b4524aca7877469dd455b5c2d ""
+  "Klotisover.tex" 1498171694 7314 76926f839b9e8e9db049b38f41a6a549 ""
+  "Klotisover.toc" 1498171698 1354 d004d631b1fecd7f65e1c242ce33445c ""
+=======
+  "Klotisover.aux" 1498170566 4133 8c3f5f2de37e06256c546fa7cd04a8af ""
+  "Klotisover.ind" 1498164378 0 d41d8cd98f00b204e9800998ecf8427e "makeindex Klotisover.idx"
+  "Klotisover.out" 1498170566 1048 c1e4d99b4524aca7877469dd455b5c2d ""
+  "Klotisover.tex" 1498170565 7313 97aa4f573403d7f6cbcd9e183229c5a4 ""
+  "Klotisover.toc" 1498170566 1354 d004d631b1fecd7f65e1c242ce33445c ""
+>>>>>>> 4e06533ea292a58f0c03fb35ae1a10bc0e2a4304
+  "arvore_caminho.jpg" 1498170300 24112 6ab84cffeb101340dbb750baa3aab0a9 ""
+  "arvore_generica.jpg" 1498165091 15109 bb944fe4734907090b4907a20a817822 ""
+  "footnotehyper-sphinx.sty" 1498164359 8841 e18cbb7bca599a223414f9b8a156abee ""
+  "klotski.png" 1498085576 3438 23e584de3f58e5baf5c9ca5098a7961e ""
+  "klotski_particular.png" 1498165503 11858 7c28d80508bb35c4aecb287b2a8a3a60 ""
+  "modelagem.png" 1498168853 5409 5deb58e97b030c175493c55b36eb2dab ""
+  "needspace.sty" 1488909717 852 0e34dbb72efc69fa07602405ad95585e ""
+  "sphinx.sty" 1498164359 60341 c1d8deab494ae689ffd03d6489506838 ""
+<<<<<<< HEAD
+  "sphinxhighlight.sty" 1498171694 8137 b8d4ef963833564f6e4eadc09cd757c4 ""
+=======
+  "sphinxhighlight.sty" 1498170565 8137 b8d4ef963833564f6e4eadc09cd757c4 ""
+>>>>>>> 4e06533ea292a58f0c03fb35ae1a10bc0e2a4304
+  "sphinxmanual.cls" 1498164359 3589 0b0aac49c6f36925cf5f9d524a75a978 ""
+  "sphinxmulticell.sty" 1498164359 14618 0defbdc8536ad2e67f1eac6a1431bc55 ""
+>>>>>>> ffd37bbb3acb2715b9c990fbe6fa54c2a41e965b
   (generated)
   "Klotisover.out"
   "Klotisover.log"
+<<<<<<< HEAD
   "Klotisover.pdf"
+=======
+<<<<<<< HEAD
+  "Klotisover.aux"
+  "Klotisover.idx"
+  "Klotisover.out"
+  "Klotisover.toc"
+  "Klotisover.pdf"
+=======
+  "Klotisover.toc"
+>>>>>>> ffd37bbb3acb2715b9c990fbe6fa54c2a41e965b
   "Klotisover.idx"
   "Klotisover.toc"
   "Klotisover.aux"
+<<<<<<< HEAD
+=======
+  "Klotisover.pdf"
+  "Klotisover.out"
+>>>>>>> 4e06533ea292a58f0c03fb35ae1a10bc0e2a4304
+>>>>>>> ffd37bbb3acb2715b9c990fbe6fa54c2a41e965b
