@@ -3,15 +3,15 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-struct gera_filho {
+struct arvgen {
     char estado;
-    struct gera_filho *vet[8];
+    struct arvgen *vet[8];
 };
 
-struct gera_filho *arvgen(struct gera_filho *pai, struct gera_filho *filho, char estado) {
+struct arvgen *gera_filho(struct arvgen *pai, struct arvgen *filho, char estado) {
     if (!filho) {
         /* aloca espaço para o novo nó */
-        filho = (struct gera_filho *)malloc(sizeof(struct gera_filho));
+        filho = (struct arvgen *)malloc(sizeof(struct arvgen));
         if (!filho) {
             printf("sem memória\n");
             exit(0);
@@ -58,22 +58,22 @@ struct gera_filho *arvgen(struct gera_filho *pai, struct gera_filho *filho, char
     }
     /* se chama recursivamente até encontrar a posição adequada para o novo elemento */
     if (estado < filho->estado)
-        arvgen(filho, filho->vet[0], estado);
+        gera_filho(filho, filho->vet[0], estado);
     else
-        arvgen(filho, filho->vet[1], estado);
+        gera_filho(filho, filho->vet[1], estado);
         
-    if ((estado < filho->estado) && (!arvgen(filho, filho->vet[1], estado)))
-        arvgen(filho, filho->vet[2], estado);
+    if ((estado < filho->estado) && (!gera_filho(filho, filho->vet[1], estado)))
+        gera_filho(filho, filho->vet[2], estado);
     else
-        arvgen(filho, filho->vet[3], estado);
+        gera_filho(filho, filho->vet[3], estado);
         
-    if ((estado < filho->estado) && (!arvgen(filho, filho->vet[3], estado)))
-        arvgen(filho, filho->vet[4], estado);
+    if ((estado < filho->estado) && (!gera_filho(filho, filho->vet[3], estado)))
+        gera_filho(filho, filho->vet[4], estado);
     else
-        arvgen(filho, filho->vet[5], estado);
+        gera_filho(filho, filho->vet[5], estado);
         
-    if ((estado < filho->estado) && (!arvgen(filho, filho->vet[5], estado)))
-        arvgen(filho, filho->vet[6], estado);
+    if ((estado < filho->estado) && (!gera_filho(filho, filho->vet[5], estado)))
+        gera_filho(filho, filho->vet[6], estado);
     else
-        arvgen(filho, filho->vet[7], estado);
+        gera_filho(filho, filho->vet[7], estado);
 }
